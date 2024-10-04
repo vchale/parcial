@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E´Chale Sabor</title>
+</head>
+<body>
+    <!-- Tabla para logo, título y descripción -->
+    <table border="0" width="100%" align="center">
+        <tr>
+            <td align="center">
+                <!-- Imagen del logo -->
+                <img src="img/logo.png" alt="Logo del Restaurante" width="250">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <h1>Bienvenidos al Restaurante "E'Chale Sabor"</h1>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <p>Creemos que la comida es una experiencia que debe disfrutarse en cualquier lugar. Nuestro objetivo es llevar la mejor gastronomía a tu hogar, sin comprometer la calidad ni el sabor.</p>
+            </td>
+        </tr>
+    </table>
+
+    <nav>
+        <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#platos-principales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <section id="entradas">
+        <h2>Entradas</h2>
+        <ul>
+            <li><strong>Ensalada Fresca:</strong> S/ 4.00</li>
+            <li><strong>Papa a la huancaína:</strong> S/ 5.00</li>
+            <li><strong>Sopa de Verduras:</strong> S/ 4.00</li>
+            <li><strong>Tequeños rellenos de queso:</strong> S/ 4.00</li>
+            <li><strong>Causa de pollo:</strong> S/ 6.00</li>
+            <li><strong>Ocopa limeña:</strong> S/ 5.00</li>
+            <li><strong>Papa rellena:</strong> S/ 4.00</li>
+            <li><strong>Causa limeña:</strong> S/ 4.00</li>
+            <img src="img/entrada.png" width="600" alt="Entradas" />
+        </ul>
+    </section>
+
+    <section id="platos-principales">
+        <h2>Platos Principales</h2>
+        <ul>
+            <li><strong>Lasaña de carne:</strong> S/ 18.00</li>
+            <li><strong>Ají de gallina:</strong> S/ 15.00</li>
+            <li><strong>Seco de carne:</strong> S/ 17.00</li>
+            <li><strong>Lomo Saltado:</strong> S/ 25.00</li>
+            <li><strong>Tallarines al pesto:</strong> S/ 17.00</li>
+            <li><strong>Tallarines a la boloñesa:</strong> S/ 17.00</li>
+            <li><strong>Pollada de barrio:</strong> S/ 20.00</li>
+            <li><strong>Arroz con pollo:</strong> S/ 20.00</li>
+            <img src="img/platos fuertes.png" width="600" alt="Platos Principales" />
+        </ul>
+    </section>
+
+    <section id="postres">
+        <h2>Postres</h2>
+        <ul>
+            <li><strong>Arroz con leche:</strong> S/ 6.00</li>
+            <li><strong>Suspiro a la limeña:</strong> S/ 7.00</li>
+            <li><strong>Leche asada:</strong> S/ 6.00</li>
+            <li><strong>Mazamorra Morada:</strong> S/ 6.00</li>
+            <li><strong>Picarones:</strong> S/ 8.00</li>
+            <li><strong>Torta de chocolate:</strong> S/ 8.00</li>
+            <li><strong>Tres Leches:</strong> S/ 8.00</li>
+        </ul>
+
+            <img src="img/postres.png" width="600" alt="Postres" />
+ 
+        </ul>
+    </section>
+
+    <section id="bebidas">
+        <h2>Bebidas</h2>
+        <ul>
+            <li><strong>Chicha Morada (vaso):</strong> S/ 6.00</li>
+            <li><strong>Limonada (vaso):</strong> S/ 5.00</li>
+            <li><strong>Maracuyá (vaso):</strong> S/ 6.00</li>
+            <li><strong>Chicha Morada (jarra):</strong> S/ 16.00</li>
+            <li><strong>Limonada (jarra):</strong> S/ 15.00</li>
+            <li><strong>Maracuyá (jarra):</strong> S/ 16.00</li>
+        </ul>
+
+            <img src="img/bebidas.jpg" width="600" alt="Bebidas" />
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Realiza tu pedido</h2>
+        <form action="enviar_pedido.php" method="post">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" required>
+            </div>
+            <div>
+                <label for="pedido">Pedido:</label>
+                <textarea name="pedido" id="pedido" rows="4" cols="30" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar Pedido">
+            </div>
+        </form>
+    </section>
+    
+
+    <footer align="center">
+        <p>&copy; 2024 E'Chale Sabor. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Alcafares 123, MIraflores</p>
+        <p>Teléfono: +51 997 001 557</p>
+        <p>Horario: Lunes a Sábado - 11:00 AM a 10:00 PM</p>
+    </footer>
+</body>
+</html>
